@@ -8,7 +8,9 @@ router.post('/', usersCtrl.create)
 // router.post('/login', usersCtrl.login)
 // GET /api/v1/users/:id
 router.get('/:id', usersCtrl.show)
-// // PUT /api/v1/users/:id
-// router.put('/:id', usersCtrl.update)
+// PUT /api/v1/users/:id
+router.put('/:id', usersCtrl.update)
+
+router.get('/:id/favorites',usersCtrl.getFavorites )
 
 module.exports = router
